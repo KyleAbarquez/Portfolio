@@ -1,0 +1,57 @@
+.calcuContainer {
+    height: 100vh;
+    background-color: black;
+}
+
+.myCalculator {
+    width: 450px;
+    height: 430px;
+    background: url(gradient.jpg);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#output {
+    width: 380px;
+    height: 75px;
+    background-color: darkslategrey;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color:aqua;
+    text-align: right;
+    font-size: 44px;
+    padding-top: 4px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+#button-wrap {
+    display: grid;
+    grid-gap: 1em;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+
+.btn {
+    font-size: 2em;
+    width: 90px;
+    background-color: rgba(242, 242, 242, .4);
+    border: solid 1px white;
+    color: black;
+}
+
+.btn:hover {
+    background-color: lightskyblue;
+    border: solid 1px white;
+}
+
+.button-row {
+    margin: 0 auto;
+}
