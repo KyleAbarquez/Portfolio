@@ -1,6 +1,7 @@
 /******** BASE STYLES ********/
 
 @import url('https://fonts.googleapis.com/css?family=Gugi|Permanent+Marker|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 * {
     box-sizing: border-box;
@@ -37,6 +38,7 @@ header {
 
 .section-title {
     font-family: 'Gugi', sans-serif;
+    font-family: 'Comfortaa', cursive;
     text-align: center;
     font-size: 23px;
     margin-top: 24px;
@@ -77,7 +79,7 @@ a {
 }
 
 .btn {
-    background-color: orange;
+    background-color: #ffae0c;
     text-transform: uppercase;
     padding: 12px;
     border-radius: 8px;
@@ -206,14 +208,16 @@ nav a:hover {
 
 .logo {
     font-family: 'Gugi', sans-serif;
+    font-family: 'Comfortaa', cursive;
     color: #00c3ff;
-    margin-top: 28px;;
+    margin-top: 28px;
 }
 
 /******** ABOUT ME ********/
 
 #title {
     font-family: 'Gugi', sans-serif;
+    font-family: 'Comfortaa', cursive;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0;
