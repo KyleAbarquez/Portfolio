@@ -220,6 +220,7 @@ nav {
 
 nav ul {
     margin: 0;
+    margin-top: 7px;
     padding: 0;
     list-style: none;
 }
@@ -227,6 +228,7 @@ nav ul {
 nav li {
     margin-bottom: 1.5em;
     margin-left: 1em;
+    
 }
 
 nav a {
@@ -257,7 +259,7 @@ nav a:hover {
 
 .nav-toggle:checked ~ nav a {
     opacity: 1;
-    transition: opacity 250ms ease-in-out 250ms;
+    transition: opacity 150ms ease-in-out 100ms;
 }
 
 #logo {
@@ -265,8 +267,9 @@ nav a:hover {
     font-family: 'Gugi', sans-serif;
     letter-spacing: 3px;
     color: black;
-    transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out 100ms;
     margin-left: 20px;
+    margin-top: 7px;
 }
 
 #logo:hover {
@@ -287,7 +290,7 @@ nav a:hover {
     line-height: 28px;
     text-shadow: 0px 1px;
     font-size: 18px;
-    color: #a742f4;
+    color: #42c2f4;
 }
 
 .about-container {
