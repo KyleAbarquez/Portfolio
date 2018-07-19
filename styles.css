@@ -30,7 +30,7 @@ header {
     z-index: 999;
     width: 100%;
     margin: 0 auto;
-    height: 90px;
+    height: 75px;
     transition: all 400ms ease-in-out 100ms;
 }
 
@@ -220,7 +220,6 @@ nav {
 
 nav ul {
     margin: 0;
-    margin-top: 9px;
     padding: 0;
     list-style: none;
 }
@@ -269,7 +268,7 @@ nav a:hover {
     color: black;
     transition: all 150ms ease-in-out;
     margin-left: 20px;
-    margin-top: 9px;
+    margin-top: 0px;
     font-size: 30px;
 }
 
