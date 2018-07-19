@@ -494,7 +494,7 @@ nav a:hover {
     }
     
     .copy {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
     
     .tools {
