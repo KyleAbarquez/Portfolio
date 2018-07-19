@@ -220,7 +220,7 @@ nav {
 
 nav ul {
     margin: 0;
-    margin-top: 7px;
+    margin-top: 9px;
     padding: 0;
     list-style: none;
 }
@@ -267,14 +267,13 @@ nav a:hover {
     font-family: 'Gugi', sans-serif;
     letter-spacing: 3px;
     color: black;
-    transition: all 150ms ease-in-out 100ms;
+    transition: all 150ms ease-in-out;
     margin-left: 20px;
-    margin-top: 7px;
-    
+    margin-top: 9px;
+    font-size: 30px;
 }
 
 #logo:hover {
-    transform: scale(1.2);
     color: #42c2f4;
     cursor: pointer;
 }
@@ -474,7 +473,7 @@ nav a:hover {
     }
     
     #logo {
-        font-size: 28px;
+        font-size: 27px;
     }
     
     #me {
