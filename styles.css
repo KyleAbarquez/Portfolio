@@ -155,7 +155,8 @@ footer {
     font-size: 18px;
     font-weight: 300;
     color: black;
-    padding: 2em;
+    padding: .8em;
+    text-align: center;
 }
 
 /******** NAVIGATION STYLING ********/
