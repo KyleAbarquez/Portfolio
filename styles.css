@@ -1,4 +1,5 @@
 /******** BASE STYLES ********/
+/*#a742f4*/
 
 @import url('https://fonts.googleapis.com/css?family=Gugi|Permanent+Marker|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
@@ -22,7 +23,7 @@ body {
 }
 
 header {
-    background-color: #95e540;
+    background-color: #a742f4;
     opacity: .95;
     text-align: center;
     position:fixed;
@@ -83,7 +84,7 @@ header {
     text-align: center;
     font-size: 25px;
     margin-top: 24px;
-    color: #95e540;
+    color: #a742f4;
     text-shadow: 1px 0px;
 }
 
@@ -93,7 +94,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #95e540;
+    color: #a742f4;
 }
 
 .icon-holder {
@@ -123,12 +124,9 @@ a {
 }
 
 .btn {
-    background-color: ;
     text-transform: uppercase;
     padding: 12px;
-    border: solid 2px #95e540;
-    color: #95e540;
-    
+    border: solid 2px #42c2f4;
 }
 
 footer {
@@ -162,7 +160,7 @@ footer {
 /******** NAVIGATION STYLING ********/
 
 nav {
-    background-color: #95e540;
+    background-color: #a742f4;
     position: absolute;
     text-align: left;
     top: 100%;
@@ -283,7 +281,7 @@ nav a:hover {
     line-height: 28px;
     text-shadow: 0px 1px;
     font-size: 18px;
-    color: #95e540
+    color: #a742f4;
 }
 
 .about-container {
@@ -426,7 +424,7 @@ nav a:hover {
 }
 
 .btn a {
-    color: 95e540;
+    color: #42c2f4;
 }
 
 .project-description {
