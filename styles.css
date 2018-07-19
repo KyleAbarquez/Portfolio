@@ -266,8 +266,8 @@ nav a:hover {
     letter-spacing: 3px;
     color: black;
     margin-top: 24px;
-    font-weight: bolder;
     transition: all 150ms ease-in-out 250ms;
+    margin-left: 20px;
 }
 
 /******** ABOUT ME ********/
