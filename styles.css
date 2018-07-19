@@ -239,7 +239,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFF;
+    color: #42c2f4;
     font-size: 22px;
 }
 
@@ -260,13 +260,19 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-.logo {
+#logo {
+    display: inline-block;
     font-family: 'Gugi', sans-serif;
     letter-spacing: 3px;
     color: black;
-    margin-top: 24px;
-    transition: all 150ms ease-in-out 250ms;
+    transition: all 150ms ease-in-out;
     margin-left: 20px;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+    color: #42c2f4;
+    cursor: pointer;
 }
 
 /******** ABOUT ME ********/
@@ -463,9 +469,9 @@ nav a:hover {
         margin-left: -10px;
     }
     
-    .logo {
+    #logo {
         font-size: 28px;
-        margin-top: 30px;
+        margin: ;
     }
     
     #me {
@@ -592,7 +598,7 @@ nav a:hover {
         content: '';
         display: block;
         height: 5px;
-        background: #FFF;
+        background: #42c2f4;
         position: absolute;
         top: -1em;
         left: 0;
