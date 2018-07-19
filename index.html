@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyle Abarquez</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -13,9 +15,9 @@
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
             <ul>
-                <li><a href="#about-me-link">About</a></li>
+                <li><a href="#about-spacer">About</a></li>
 
-                <li><a href="#projects-link">Projects</a></li>
+                <li><a href="#projects-spacer">Projects</a></li>
                 <li><a href="#contact-title">Contact</a></li>
              </ul>
         </nav>
@@ -23,24 +25,35 @@
             <span></span>
         </label>
     </header>
-    <div class="wrap">
-        <div class="spacer"></div>
-        <div class="about-container">
+    
+    <div class="about-container">
+           
             <div class="about-wrap">
+               <div class="tools">
+                   <img src="img/code-icon.svg" alt="" class="tool-icon">
+                   <div id="plus">+</div>
+                   <img src="img/design-icon.svg" alt="" class="tool-icon">  
+               </div>
                 <h1 id="title">Web Designer & Front-End Developer</h1>
-                <p id='about-blurb'>I'm a design oriented front-end developer with a passion for learning. I create fully responsive, interactive websites with great user experience and visual design. </p>
+                <p id='about-blurb'>Hi! I'm a design oriented front-end developer with a passion for learning. I design and code fully responsive, interactive web products with great user experiences and visual design. I love what I do and am excited to further develop my skills. I hope that we can work together!</p>
                 <div class="icon-holder">
-                    <div class="btn"><a href="#project-link">Projects</a></div>
-                    <div class="btn"><a href="">Contact</a></div>
+                    <div class="btn"><a href="#projects-spacer">Projects</a></div>
+                    <div class="btn"><a href="#contact-title">Contact</a></div>
                 </div>
             </div>
+            
+            <a href="#about-spacer" id="d-arrow"><img src="img/expand-button%20(1).png"  alt="" ></a>
+            
         </div>
         
+        <div id="about-spacer" class="spacer"></div>
+        
+    <div class="wrap">
         <div class="about-me-section-wrap" >
            <div class="about-me" id="about-me-link">
                 <h1 class="section-title">About me</h1>
                 <img src="img/meeeee.jpg" alt="Kyle Abarquez" id="me">
-                <p>Hi, I'm Kyle! I've been teaching myself web design and front end development since 2016 and am currently a student of UCI's UX/UI bootcamp course. I'm always looking to further my knowledge and love putting my skills to use in the creation of well thought out projects. I aim to set myself apart with my combination of technical front-end knowledge and eye for effective user-centric design.</p>
+                <p>Hi, I'm Kyle! I've been teaching myself web design and front end development since 2016 and am currently a student of UCI's UX/UI bootcamp course. I'm always looking to further my knowledge and love putting my skills to use in the creation of well thought out projects. I aim to set myself apart with my combination of technical front-end knowledge and eye for beautiful user-centric design.</p>
             </div>
             <div class="skills">
                <h1 class="section-title">Skills & Technologies</h1>
@@ -60,35 +73,32 @@
             </div>
         </div> 
         
+        <div id="projects-spacer" class="spacer"></div>
+        
         <h1 class="section-title" id="projects-link">Projects</h1>
             <div class="project-wrap" id="project-link">
                 <div class="project-card">
-                    <div class="project-title-pic">
-                        <h1 class="section-title">My Javascript Calculator</h1>
-                        <div class="pic-holder">
-                            <img src="img/SVG/Asset%202.svg" class="project-pic" alt="JavaScrupt Calculator">
-                            <a href="calculator/index.html" target="_blank"><div class="overlay">
-                                <img src="img/SVG/small-eye.svg" alt="">
-                                <p>Learn More</p>
-                            </div></a>
+                   <a href="calculator/index.html" target="_blank">
+                        <div class="project-title-pic">
+                            <h1 class="section-title">My Javascript Calculator</h1>
+                            <div class="pic-holder">
+                                <img src="img/SVG/Asset%202.svg" class="project-pic" alt="JavaScript Calculator">
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="project-description">
                         <p> A simple calculator with elegant design. This project was mainly an excercise in JavaScript DOM manipulation and logic. </p>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-title-pic">
-                        <h1 class="section-title">Bootstrap Site: Frog Con</h1>
-                        <div class="pic-holder">
-                            <img src="img/SVG/Asset%201.svg"; class="project-pic" alt="">
-                            <a href="bootstrap-site/index.html" target="_blank"><div class="overlay">
-                                <img src="img/SVG/small-eye.svg" alt="">
-                                <p>Learn More</p>
-                            </div></a>
+                   <a href="bootstrap-site/index.html" target="_blank">
+                        <div class="project-title-pic">
+                            <h1 class="section-title">Bootstrap Site: Frog Con</h1>
+                            <div class="pic-holder">
+                                <img src="img/SVG/Asset%201.svg"; class="project-pic" alt="Bootstrap Site">
+                            </div>
                         </div>
-                        
-                    </div>
+                    </a>
                     <div class="project-description">
                         <p>This is a simple and clean site I made about a fictitous frog convention. My hobby is keeping dart frogs so this project was made mostly for fun. This project gave me great experience with using a variety of bootstrap layout techniques and modules.</p>
                     </div>
@@ -97,11 +107,7 @@
                     <div class="project-title-pic">
                         <h1 class="section-title">HTML Emails</h1>
                         <div class="pic-holder">
-                           <img src="img/bootstrap-site.png" class="project-pic" alt="">
-                           <div class="overlay">
-                                <img src="img/SVG/small-eye.svg" alt="">
-                               <p>Learn More</p>
-                            </div>
+                           <img src="img/SVG/Asset%208.svg" class="project-pic" alt="">
                         </div>
                     </div>
                     <div class="project-description">
@@ -112,11 +118,7 @@
                     <div class="project-title-pic">
                         <h1 class="section-title">Jose Abarquez Engineering Site</h1>
                         <div class="pic-holder">
-                            <img src="img/1x/Asset%204.png" class="project-pic" alt="">
-                            <div class="overlay">
-                                <img src="img/SVG/small-eye.svg" alt="">
-                                <p>Learn More</p>
-                            </div>
+                            <img src="img/SVG/ee.svg" class="project-pic" alt="">
                         </div>
                     </div>
                     <div class="project-description">
@@ -135,7 +137,7 @@
         </div>  
     </div>
     <div class="copy">
-        <p>&copy Kyle Abarquez 2018</p>
+        <p>Handcrafted by me! &copy Kyle Abarquez 2018</p>
         <div class="icon-holder-footer">
             <img src="img/gh.svg" class="social-icon" alt="">
             <img src="img/in.svg" class="social-icon" alt="">
@@ -160,6 +162,44 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <script>
+        // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
     </script>
 </body>
 </html>
