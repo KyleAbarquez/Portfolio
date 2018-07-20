@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: #a742f4;
+    background-color: black;
     opacity: .95;
     text-align: center;
     position:fixed;
@@ -85,7 +85,7 @@ header {
     text-align: center;
     font-size: 25px;
     margin-top: 24px;
-    color: #a742f4;
+    color: #42c2f4;
     text-shadow: 1px 0px;
 }
 
@@ -95,7 +95,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #a742f4;
+    color: #42c2f4;
 }
 
 .icon-holder {
@@ -161,7 +161,7 @@ footer {
 /******** NAVIGATION STYLING ********/
 
 nav {
-    background-color: #a742f4;
+    background-color: black;
     position: absolute;
     text-align: left;
     top: 100%;
@@ -198,7 +198,7 @@ nav {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: black;
+    background: #FFF;
     height: 3.3px;
     width: 2em;
     border-radius: 2px;
@@ -232,7 +232,7 @@ nav li {
 }
 
 nav a {
-    color: black;
+    color: #FFF;
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -266,7 +266,7 @@ nav a:hover {
     display: inline-block;
     font-family: 'Gugi', sans-serif;
     letter-spacing: 3px;
-    color: black;
+    color: #FFF;
     transition: all 150ms ease-in-out;
     margin-left: 20px;
     margin-top: 0px;
