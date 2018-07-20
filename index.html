@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyle Abarquez</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </head>
 
 <body>
+  
    <div id="top"></div>
     <header>
-        <h1 class="logo"><a href="#top" id="logo">Kyle Abarquez</a></h1>
+        <h1 class="logo"><a href="#top" id="logo"><i class="fas fa-rocket"></i>  Kyle Abarquez</a></h1>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
             <ul>
                 <li><a href="#about-spacer">About</a></li>
 
                 <li><a href="#projects-spacer">Projects</a></li>
-                <li><a href="#contact-title">Contact</a></li>
+                <li><a href="#footer-tagline">Contact</a></li>
              </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -35,11 +37,12 @@
                    <div id="plus">+</div>
                    <img src="img/code-icon.svg" alt="" class="tool-icon">  
                </div>
-                <h1 id="title">Web Designer & Front-End Developer</h1>
+                <h1 id="title">UX/UI Designer & Front-End Developer</h1>
                 <p id='about-blurb'>Hi! I'm a design oriented front-end developer with a passion for learning. I design and code fully responsive, interactive web pages with great user experiences and visual design.</p>
                 <div class="icon-holder">
                     <div class="btn"><a href="#projects-spacer">Projects</a></div>
-                    <div class="btn"><a href="#contact-title">Contact</a></div>
+                    
+                    <div class="btn"><a href="#footer-tagline">Contact</a></div>
                 </div>
             </div>
             
@@ -52,18 +55,20 @@
     <div class="wrap">
         <div class="about-me-section-wrap" >
            <div class="about-me" id="about-me-link">
-                <h1 class="section-title">About me</h1>
+                <div class="section-t-card" id="about-card"><h1 class="section-title">About me</h1></div>
                 <img src="img/itme.jpg" alt="Kyle Abarquez" id="me">
+                <div id="r-btn"><p><a href="">RESUME <i class="fas fa-file-download"></i></a></p></div>
                 <p>Hi, I'm Kyle! I've been teaching myself web design and front end development since 2016 and am currently a student of UCI's UX/UI bootcamp course. I'm always looking to further my knowledge and love putting my skills to use in the creation of well thought out projects. I aim to set myself apart with my combination of technical front-end knowledge and eye for beautiful user-centric design.</p>
             </div>
             <div class="skills">
-               <h1 class="section-title">Skills & Technologies</h1>
+                <div class="section-t-card" id="skills-card"><h1 class="section-title">Skills & Technologies</h1></div>
                 <ul id="skills-list">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Javascript</li>
                         <li>Jquery</li>
                         <li>Bootstrap</li>
+                        <li>UX/UI Design</li>
                         <li>Adobe Creative Suite</li>
                         <li>Sketch app</li>
                         <li>Wireframing</li>
@@ -76,12 +81,13 @@
         
         <div id="projects-spacer" class="spacer"></div>
         
-        <h1 class="section-title" id="projects-link">Projects</h1>
+        <div class="section-t-card" id="projects-card"><h1 class="section-title" id="projects-link">Projects</h1></div>
             <div class="project-wrap" id="project-link">
                 <div class="project-card">
                    <a href="calculator/index.html" target="_blank">
                         <div class="project-title-pic">
                             <h1 class="section-title">My Javascript Calculator</h1>
+                            <div class="project-cat">Front-End-Dev.</div>
                             <div class="pic-holder">
                                 <img src="img/SVG/Asset%202.svg" class="project-pic" alt="JavaScript Calculator">
                             </div>
@@ -95,6 +101,7 @@
                    <a href="bootstrap-site/index.html" target="_blank">
                         <div class="project-title-pic">
                             <h1 class="section-title">Bootstrap Site: Frog Con</h1>
+                            <div class="project-cat">Front-End-Dev.</div>
                             <div class="pic-holder">
                                 <img src="img/SVG/Asset%201.svg"; class="project-pic" alt="Bootstrap Site">
                             </div>
@@ -106,7 +113,34 @@
                 </div>
                 <div class="project-card">
                     <div class="project-title-pic">
+                        <h1 class="section-title">Volunteer Match Site Redesign</h1>
+                        <div class="project-cat uxui">UX/UI Design</div>
+                        <div class="pic-holder">
+                            <img src="img/vm-project-pic-01.svg" class="project-pic" alt="">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolore nobis voluptates, asperiores doloremque neque, totam minima qui ad perferendis reiciendis, obcaecati autem, dolores laboriosam laudantium. Laborum, id! Quidem quo officia officiis enim ullam. Quas ab ipsam ducimus impedit numquam.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                   <a href="icon-gallery.html" target="_blank">
+                        <div class="project-title-pic">
+                            <h1 class="section-title">SVG Iconography</h1>
+                            <div class="project-cat uxui">UX/UI Design</div>
+                            <div class="pic-holder">
+                                <img src="img/icon-project-pic-02.svg" class="project-pic" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-description">
+                        <p>I have fun designing svg icons in Adobe Illustrator! Here are some icon sets that I have done.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title-pic">
                         <h1 class="section-title">HTML Emails</h1>
+                        <div class="project-cat">Front-End-Dev.</div>
                         <div class="pic-holder">
                            <img src="img/SVG/Asset%208.svg" class="project-pic" alt="">
                         </div>
@@ -118,6 +152,7 @@
                 <div class="project-card">
                     <div class="project-title-pic">
                         <h1 class="section-title">Jose Abarquez Engineering Site</h1>
+                        <div class="project-cat">Front-End-Dev.</div>
                         <div class="pic-holder">
                             <img src="img/SVG/ee.svg" class="project-pic" alt="">
                         </div>
@@ -126,17 +161,18 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolore nobis voluptates, asperiores doloremque neque, totam minima qui ad perferendis reiciendis, obcaecati autem, dolores laboriosam laudantium. Laborum, id! Quidem quo officia officiis enim ullam. Quas ab ipsam ducimus impedit numquam.</p>
                     </div>
                 </div>
+                
             </div>
-        <h1 class="section-title" id="contact-title">Contact</h1>
         <div class="contact-info">
+             <p><i class="far fa-envelope"></i>  Contact</p>
+        </div>  
+    </div>
     <footer id="footer">
         <p id="footer-tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 
-        <p>Phone <a href="tel:1-949-229-9691">+1(949)229-9691</a></p>
-        <p>Email <a href="mailto:kabarquez8@gmail.com">Kabarquez8@gmail.com</a></p>
-    </footer>    
-        </div>  
-    </div>
+        <p>Phone: <a href="tel:1-949-229-9691">+1(949)229-9691</a></p>
+        <p>Email: <a href="mailto:kabarquez8@gmail.com">Kabarquez8@gmail.com</a></p>
+    </footer>
     <div class="copy">
         <div class="icon-holder-footer">
             <img src="img/gh.svg" class="social-icon" alt="">

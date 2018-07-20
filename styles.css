@@ -20,6 +20,11 @@ body {
     width: 95%;
     max-width: 1600px;
     margin: 0 auto;
+    height: 100%
+}
+
+.footer-push {
+    height: 100%;
 }
 
 header {
@@ -35,6 +40,15 @@ header {
     box-shadow: 0px 2px 3px black; 
 }
 
+.fa-rocket {
+    transition: all 350ms ease-in-out;
+}
+
+#logo:hover > .fa-rocket{
+    transform: translate(100px, -100px);
+    color: #42c2f4;
+}
+
 .tools {
     display: flex;
     padding: 1em;
@@ -42,7 +56,8 @@ header {
     justify-content: space-around;
     height: 110px;
     display: none;
-    transition: all 400ms ease-in-out;
+    transition: transform 150ms ease-in-out 100ms;
+    transition: color 100ms ease-in-out;
 }
 
 .tool-icon {
@@ -76,7 +91,7 @@ header {
 }
 
 .spacer {
-    height: 54px;
+    height: 35px;
 }
 
 .section-title {
@@ -89,13 +104,58 @@ header {
     text-shadow: 1px 0px;
 }
 
+.section-t-card {
+    background-color: black;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .8px;
+    box-shadow: 2px 2px 4px;
+}
+
+#r-btn:hover {
+    transform: translate(0px, -12px);
+    transform: scale(1.1);
+}
+
+#about-card {
+    max-width: 160px;
+    margin: 1em auto;
+    padding-bottom: 4px;
+}
+
+#skills-card {
+    max-width: 320px;
+    margin-top: 1em;
+    padding-bottom: 3px;
+}
+
+#projects-card {
+    max-width: 150px;
+    padding-bottom: 5px;
+    margin-bottom: 16px;
+}
+
+#projects-spacer {
+    height: 80px;
+}
+
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #42c2f4;
+    color: #FFF;
+}
+
+#footer p a {
+     letter-spacing: 1px;   
 }
 
 .icon-holder {
@@ -132,16 +192,21 @@ a {
 
 footer {
     text-align: center;
-    padding: 32px;
-    color: slategrey;
+    padding: 19px;
+    color: black;
+    background-color: #42c2f4;
+    margin-top: 5em;
+    font-weight: 550;
 }
 
 #footer-tagline {
     width: 90%;
     margin: 0 auto;
     line-height: 1.5em;
-    font-weight: 300;
-    color: dimgrey;
+    font-weight: 400;
+    color: #FFF;
+    margin-top: 20px;
+    letter-spacing: 1px;
 }
 
 .copy {
@@ -278,6 +343,22 @@ nav a:hover {
     cursor: pointer;
 }
 
+.fa-file-download {
+    animation: point-r 2s infinite;
+}
+
+@keyframes point-r {
+    0%   {}
+    50% {transform: translate(0, 3px);}
+    100% {}
+}
+
+@keyframes point {
+    0%   {}
+    50% {transform: translate(0, 24px);}
+    100% {}
+}
+
 /******** ABOUT ME ********/
 
 #title {
@@ -323,6 +404,27 @@ nav a:hover {
     border-radius: 18px;
 }
 
+#r-btn {
+    border: solid 2px #8c3af2;
+    transition: all 150ms ease-in-out;
+    width: 126px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8c3af2;
+    
+    margin: 0 auto;
+    margin-top: .8em;
+    margin-bottom: -20px;
+}
+
+#r-btn p a {
+    color: #8c3af2;
+    font-weight: 500;
+    letter-spacing: .55px;
+}
+
 #about-blurb {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5em;
@@ -331,6 +433,7 @@ nav a:hover {
     font-size: 14px;
     padding: 5px;
     color: #FFF;
+    letter-spacing: .5px;
 }
 
 .about-me-section-wrap {
@@ -422,14 +525,19 @@ nav a:hover {
 }
 
 .project-cat {
-    background-color: orange;
+    background-color: #8c3af2;
     padding: 8px;
-    width: 200px;
+    width: 150px;
     margin: 0 auto;
     margin-bottom: 8px;
-    border-radius: 6px;
+    border-radius: 22px;
     color: #fff;
     font-weight: 300;
+    
+}
+
+.uxui {
+    background-color: #42c2f4;
 }
 
 .btn a {
@@ -445,8 +553,41 @@ nav a:hover {
 /******** CONTACT ********/
 
 #contact-title {
-    margin-top: 3em;
-    margin-bottom: -18px;
+    color: #FFF;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    width: 190px;
+    font-family: 'Gugi', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 25px;
+    color: #42c2f4;
+    text-shadow: 1px 0px;
+    margin: 0 auto;
+    top: 110px;
+    z-index: 1000000;
+    background-color: black;
+    border-radius: 10px;
+    letter-spacing: .8px;
+}
+
+/******** ICONS PAGE ********/
+
+#icons-spacer {
+    height: 85px;
+}
+
+#icon-description {
+    text-align: center;
+    line-height: 1.8em;
+    color: dimgrey;
+    font-weight: 300;
 }
 
 /******** MEDIA QUERIES ********/
@@ -491,6 +632,12 @@ nav a:hover {
         grid-gap: 18px;
     }
     
+    .icon-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 18px;
+    }
+    
     .icon-holder {
         width: 60%;
     }
@@ -503,12 +650,21 @@ nav a:hover {
         flex-direction: row-reverse;
     }
     
+    .copy p {
+        margin-left: 2em;
+    }
+    
     .tools {
         display: flex;
     }
 }
 
 @media screen and (min-width: 980px) {
+    
+    .project-wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 24px;
+    }
 
     .about-me-section-wrap {
         display: flex;
@@ -616,7 +772,6 @@ nav a:hover {
 
 @media screen and (min-width: 1300px) {
     .project-wrap {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 24px;
     }
 }

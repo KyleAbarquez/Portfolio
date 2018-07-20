@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Abarquez</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html" id="logo">Kyle Abarquez</a></h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#about-spacer">About</a></li>
+
+                <li><a href="#projects-spacer">Projects</a></li>
+                <li><a href="#contact-title">Contact</a></li>
+             </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <div class="footer-push">
+    <div class="wrap">
+        <div id="icons-spacer" class="spacer"></div>
+        
+        <h1 class="section-title" id="projects-link">SVG Iconography</h1>
+            <div class="icon-wrap" id="project-link">
+                <div class="project-card">
+                   <a href="calculator/index.html" target="_blank">
+                        <div class="project-title-pic">
+                            <h1 class="section-title">Lo-Fi Icon Set</h1>
+                            <div class="pic-holder">
+                                <img src="img/lo-fi_icons-01.svg" class="project-pic" alt="JavaScript Calculator">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-description">
+                        <p>Some simple SVG icons that can be used in a UI design.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                   <a href="bootstrap-site/index.html" target="_blank">
+                        <div class="project-title-pic">
+                            <h1 class="section-title">Frog Icon Set</h1>
+                            <div class="pic-holder">
+                                <img src="img/frog-icons-02.svg"; class="project-pic" alt="Bootstrap Site">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-description">
+                        <p>A fun frog icon set inspired my my dart frog hobby.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="copy">
+        <div class="icon-holder-footer">
+            <img src="img/gh.svg" class="social-icon" alt="">
+            <img src="img/in.svg" class="social-icon" alt="">
+            <img src="img/cp.svg" class="social-icon" alt="">
+        </div>
+        <p>Handcrafted by me! &copy Kyle Abarquez 2018</p>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121979261-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121979261-1');
+    </script>
+    <!-- Hotjar Tracking Code for https://kyleabarquez.github.io/Portfolio/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:946403,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <script>
+        // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+    </script>
+</body>
+</html>
