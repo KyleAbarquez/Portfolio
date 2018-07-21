@@ -105,13 +105,14 @@ header {
     font-family: 'Comfortaa', cursive;
     text-align: center;
     font-size: 25px;
+    font-weight: 100
     margin-top: 24px;
     color: #42c2f4;
     text-shadow: 1px 0px;
 }
  
 .section-t-card {
-    background-color: black;
+    background-color: ;
     border-radius: 12px; 
     width: 100%;
     max-width: 200px;
@@ -139,6 +140,7 @@ header {
     max-width: 320px;
     margin-top: 1em;
     padding-bottom: 3px;
+    
 }
 
 #projects-card {
@@ -413,14 +415,14 @@ nav a:hover {
 }
 
 #r-btn {
-    border: solid 2px #8c3af2;
+    border: solid 3px #42c2f4;
     transition: all 150ms ease-in-out;
-    width: 126px;
-    height: 42px;
+    width: 128px;
+    height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #8c3af2;
+    color: #42c2f4;
     
     margin: 0 auto;
     margin-top: .8em;
@@ -428,8 +430,8 @@ nav a:hover {
 }
 
 #r-btn p a {
-    color: #8c3af2;
-    font-weight: 500;
+    color: #42c2f4;
+    font-weight: 600;
     letter-spacing: .55px;
     font-size: 16px;
 }
@@ -799,10 +801,10 @@ nav a:hover {
     nav a::before {
         content: '';
         display: block;
-        height: 5px;
+        height: 4px;
         background: #42c2f4;
         position: absolute;
-        top: -1em;
+        top: -.5em;
         left: 0;
         right: 0;
         transform: scale(0,1);
