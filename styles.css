@@ -224,6 +224,8 @@ footer {
 
 /******** NAVIGATION STYLING ********/
 
+
+
 nav {
     background-color: black;
     position: absolute;
@@ -247,11 +249,10 @@ nav {
     position: absolute;
     top: 0;
     left:30px;
-    margin-left: 1em;
+    margin-left: -16px;
     height: 100%;
     display: flex;
     align-items: center;
-    
 }
 
 .nav-toggle-label:hover {
@@ -263,8 +264,8 @@ nav {
 .nav-toggle-label span::after {
     display: block;
     background: #FFF;
-    height: 3.3px;
-    width: 2em;
+    height: 2px;
+    width: 1.6em;
     border-radius: 2px;
     position: relative;
 }
@@ -609,20 +610,30 @@ nav a:hover {
     
 }
 
+
+
 @media screen and (max-width: 570px) {
     .nav-toggle-label {
         margin-left: -10px;
     }
     
     #logo {
-        font-size: 27px;
+        font-size: 24px;
+        margin-left: -18px;
+        transform: translate(0px, -15px)
+    }
+    
+    .fa-rocket {
+        visibility: hidden;
     }
     
     #me {
         width: 100%;
     }
     
-    
+    header {
+        height: 50px;
+    }
     
 }
 
