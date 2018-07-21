@@ -132,6 +132,7 @@ header {
     max-width: 160px;
     margin: 1em auto;
     padding-bottom: 4px;
+    
 }
 
 #skills-card {
@@ -480,6 +481,7 @@ nav a:hover {
 #skills-list {
     text-align: center;
     padding-bottom: 1em;
+    margin-left: 9px;
 }
 
 #skills-list li {
@@ -726,6 +728,11 @@ nav a:hover {
     
     #me {
         margin-top: 20px;
+        
+    }
+    
+    #about-card {
+        margin-bottom: -5px;
     }
     
     .skills {
@@ -736,9 +743,10 @@ nav a:hover {
     }
     
     #skills-list {
-        margin-top: 45px;
+        margin-top: 25px;
         line-height: 1.5em;
-        margin-left: 12px;
+        margin-left: 8px;
+        text-align: 
     }
     
     #skills-list li {
