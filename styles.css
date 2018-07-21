@@ -90,6 +90,12 @@ header {
     100% {}
 }
 
+@keyframes point-up {
+    0%   {}
+    50% {transform: translate(0, -1.5em);}
+    100% {}
+}
+
 .spacer {
     height: 45px;
 }
@@ -550,6 +556,27 @@ nav a:hover {
     line-height: 1.8em;
     color: dimgrey;
     font-weight: 300;
+}
+
+.arrow-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: -100px;
+    animation: point-up 2s infinite;
+    flex-direction: column;
+}
+
+.arrow-holder p {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+#up-arrow {
+    max-width: 48px;
 }
 
 /******** CONTACT ********/
