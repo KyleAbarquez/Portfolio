@@ -190,8 +190,9 @@ a {
 
 .btn {
     text-transform: uppercase;
-    padding: 12px;
+    padding: 14px;
     border: solid 2px #42c2f4;
+    margin-top: 2em;
 }
 
 footer {
@@ -228,6 +229,7 @@ footer {
 }
 
 .footer-push {
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -243,7 +245,7 @@ footer {
 
 
 nav {
-    background-color: black;
+    background-color: #42c2f4;
     position: absolute;
     text-align: left;
     top: 100%;
@@ -322,7 +324,6 @@ nav a {
 }
 
 nav a:hover {
-    color: #42c2f4;
     font-size: 22px;
 }
 
@@ -623,7 +624,7 @@ nav a:hover {
 =
 
 #icons-spacer {
-    height: 85px;
+    min-height: 285px;
 }
 
 #icon-description {
@@ -813,13 +814,14 @@ nav a:hover {
         content: '';
         display: block;
         height: 4px;
-        background: #42c2f4;
+        background: #FFF;
         position: absolute;
         top: -.5em;
-        left: 0;
+        left: 0px;
         right: 0;
         transform: scale(0,1);
         transition: transform ease-in-out 250ms;
+        transform-origin: center;
     }
     
     nav a:hover::before {
