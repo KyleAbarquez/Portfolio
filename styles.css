@@ -11,7 +11,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    background: #111111;
+    background: black;
     font-family: sans-serif;
     font-weight: 400;
 }
@@ -392,9 +392,8 @@ nav a:hover {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0;
-    font-weight: 900;
+    font-weight: 100;
     line-height: 28px;
-    text-shadow: 0px 1px;
     font-size: 18px;
     color: #42c2f4;
 }
@@ -403,14 +402,13 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-background-image: url(img/dotz.svg);
+background-image: url(img/pixel-stars-gif-4.gif);
     background-position: center;
     background-color: #111111;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     margin: 0 auto;
-    
     align-content: center;
     padding: 1em;
 }
@@ -426,7 +424,6 @@ background-image: url(img/dotz.svg);
     margin:  auto;
     padding: 1.3em;
     text-align: center;
-    border-radius: 18px;
 }
 
 #r-btn {
@@ -470,7 +467,6 @@ background-image: url(img/dotz.svg);
 
 #me {
     max-width: 250px;
-    border-radius: 100%;
     box-shadow:  5px;
 }
 
@@ -619,13 +615,11 @@ background-image: url(img/dotz.svg);
     text-align: center;
     font-size: 25px;
     color: #42c2f4;
-    text-shadow: 1px 0px;
     margin: 0 auto;
     top: 110px;
     z-index: 1000000;
     background-color: black;
     border: solid 3px #42c2f4;
-    letter-spacing: .8px;
 }
 
 /******** ICONS PAGE ********/
