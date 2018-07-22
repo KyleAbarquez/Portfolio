@@ -11,7 +11,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    background: #FFF;
+    background: #111111;
     font-family: sans-serif;
     font-weight: 400;
 }
@@ -191,8 +191,9 @@ a {
 .btn {
     text-transform: uppercase;
     padding: 14px;
-    border: solid 2px #42c2f4;
-    margin-top: 2em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: solid 3px #42c2f4;
 }
 
 footer {
@@ -220,12 +221,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    background-color: #f2f2f2;
+    background-color: #008fb7;
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     color: black;
     padding: .8em;
     text-align: center;
+    background: linear-gradient(0deg, #008fb7, #42c2f4);
 }
 
 .footer-push {
@@ -265,7 +267,7 @@ nav {
 
 .nav-toggle-label {
     position: absolute;
-    top: 0;
+    top: 1.5px;
     left:30px;
     margin-left: -16px;
     height: 100%;
@@ -471,31 +473,34 @@ background-image: url(img/dotz.svg);
     line-height: 2em;
     text-align: left;
     padding: 1em;
-    color: black;
+    color: #FFF;
     font-weight: 300;
 }
 
 .about-me {
     padding-top: 1px;
     text-align: center;
-    background: linear-gradient(-90deg, white, #f2f2f2);
+    background: linear-gradient(-90deg, #111111, black);
+    border-radius: 20px;
 }
 
 /**** SKILLS ****/
 
 .skills {
     padding-top: 1px;
-    background: linear-gradient(90deg, white, #f2f2f2);
+    background: linear-gradient(90deg, #111111, black);
+    border-radius: 20px;
 }
 
 #skills-list {
+    
     text-align: center;
     padding-bottom: 1em;
     margin-left: 9px;
 }
 
 #skills-list li {
-    color: black;
+    color: #FFF;
     margin-left: -50px;
     padding: .5em;
     font-weight: 500;
@@ -530,14 +535,14 @@ background-image: url(img/dotz.svg);
 }
 
 .project-title-pic h1 {
-    color: black;
+    color: #FFF;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
 }
 
 .pic-holder {
-    position: relative;
+    
 }
 
 .project-pic {
@@ -545,19 +550,20 @@ background-image: url(img/dotz.svg);
 }
 
 .project-cat {
-    background-color: #8c3af2;
+    color: #8c3af2;
     padding: 8px;
     width: 150px;
     margin: 0 auto;
     margin-bottom: 8px;
-    border-radius: 22px;
-    color: #fff;
+    border: solid 2px #8c3af2;
     font-weight: 300;
-    
+    text-transform: uppercase;
 }
 
 .uxui {
-    background-color: #42c2f4;
+    background-color: transparent;
+    border: solid 2px #42c2f4;
+    color: #42c2f4;
 }
 
 .btn a {
@@ -566,7 +572,7 @@ background-image: url(img/dotz.svg);
 
 .project-description {
     line-height: 1.8em;
-    color: dimgrey;
+    color: #FFF;
     font-weight: 300;
 }
 
@@ -614,7 +620,8 @@ background-image: url(img/dotz.svg);
     top: 110px;
     z-index: 1000000;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 12px;
+    border: solid 3px #42c2f4;
     letter-spacing: .8px;
 }
 
@@ -724,6 +731,7 @@ background-image: url(img/dotz.svg);
     
     .about-me-section-wrap p {
         max-width: 600px;
+        color: #FFF;
     }
     
     .about-me {
@@ -761,6 +769,7 @@ background-image: url(img/dotz.svg);
     
     #skills-list li {
         font-size: 18px;
+        color: #FFF;
     }
 }
 
