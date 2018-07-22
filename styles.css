@@ -283,7 +283,6 @@ nav {
     background: #FFF;
     height: 2px;
     width: 1.6em;
-    border-radius: 2px;
     position: relative;
 }
 
@@ -402,7 +401,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-background-image: url(img/pixel-stars-gif-4.gif);
+    background-image: url(img/pixel-stars-gif-4.gif);
     background-position: center;
     background-color: #111111;
     background-repeat: no-repeat;
