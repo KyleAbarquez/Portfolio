@@ -396,10 +396,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-/*    background-image: url(img/SVG/dan.svg);*/
-    background-color: black;
+background-image: url(img/dotz.svg);
     background-position: center;
-    
+    background-color: #111111;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
