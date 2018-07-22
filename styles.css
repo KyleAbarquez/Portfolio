@@ -97,18 +97,15 @@ header {
 }
 
 .section-title {
-    font-family: 'Gugi', sans-serif;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'fake_receipt', sans-serif;
     text-align: center;
     font-size: 25px;
-    font-weight: 100
     margin-top: 24px;
     color: #42c2f4;
-    text-shadow: 1px 0px;
 }
  
 .section-t-card {
-    background-color: ;
+    font-family: 'fake_receipt', sans-serif;
     border-radius: 12px; 
     width: 100%;
     max-width: 200px;
@@ -348,7 +345,7 @@ nav a:hover {
 
 #logo {
     display: inline-block;
-    font-family: 'Gugi', sans-serif;
+    font-family: 'fake_receipt', sans-serif;
     letter-spacing: 3px;
     color: #FFF;
     transition: all 150ms ease-in-out;
@@ -379,11 +376,19 @@ nav a:hover {
     100% {}
 }
 
+@font-face {
+    font-family: 'fake_receipt';
+    src: url('fake_receipt-webfont.woff2') format('woff2'),
+         url('fake_receipt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /******** ABOUT ME ********/
 
 #title {
-    font-family: 'Gugi', sans-serif;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'fake_receipt', sans-serif;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0;
@@ -480,7 +485,7 @@ background-image: url(img/dotz.svg);
 .about-me {
     padding-top: 1px;
     text-align: center;
-    background: linear-gradient(-90deg, #111111, black);
+/*    background: linear-gradient(-90deg, #111111, black);*/
     border-radius: 20px;
 }
 
@@ -488,7 +493,7 @@ background-image: url(img/dotz.svg);
 
 .skills {
     padding-top: 1px;
-    background: linear-gradient(90deg, #111111, black);
+/*    background: linear-gradient(90deg, #111111, black);*/
     border-radius: 20px;
 }
 
@@ -610,8 +615,7 @@ background-image: url(img/dotz.svg);
     position: relative;
     height: 60px;
     width: 190px;
-    font-family: 'Gugi', sans-serif;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'fake_receipt', cursive;
     text-align: center;
     font-size: 25px;
     color: #42c2f4;
@@ -620,7 +624,6 @@ background-image: url(img/dotz.svg);
     top: 110px;
     z-index: 1000000;
     background-color: black;
-    border-radius: 12px;
     border: solid 3px #42c2f4;
     letter-spacing: .8px;
 }
