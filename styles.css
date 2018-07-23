@@ -401,9 +401,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(img/pixel-stars-gif-4.gif);
+/*    background-image: url(img/pixel-stars-gif-4.gif);*/
     background-position: center;
-    background-color: #111111;
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -448,7 +448,7 @@ nav a:hover {
 }
 
 #about-blurb {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'fake_receipt', sans-serif;
     line-height: 1.5em;
     text-align: center;
     margin-top: -15px;
@@ -660,7 +660,7 @@ nav a:hover {
     
     #logo {
         font-size: 24px;
-        margin-left: -28px;
+        margin-left: -px;
         transform: translate(0px, -15px)
     }
     
