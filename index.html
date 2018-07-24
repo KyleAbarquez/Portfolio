@@ -4,34 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyle Abarquez</title>
-    <link rel="shortcut icon" type="image/png "href="img/favicon.png">
+    <link rel="shortcut icon" type="image/png "href="img/noun_stars_81906_000000.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </head>
 
-<body>
-  
+<body data-spy="scroll" data-target=".navbar">
    <div id="top"></div>
     <header>
         <h1 class="logo"><a href="#top" id="logo">Kyle Abarquez</a></h1>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
+<!--        <input type="checkbox" id="nav-toggle" class="nav-toggle">-->
+        <nav class="navbar">
             <ul>
-                <li><a href="#about-spacer">About</a></li>
-
-                <li><a href="#projects-spacer">Projects</a></li>
-                <li><a href="#footer-tagline">Contact</a></li>
+                <li><a href="#about-spacer" class="one-star">About</a></li>
+                <li ><a href="#projects-spacer" class="two-star">Projects</a></li>
+                <li ><a href="#footer-tagline" class="three-star">Contact</a></li>
              </ul>
         </nav>
+<!--
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
         </label>
+-->
     </header>
     
     <div class="about-container">
-           
             <div class="about-wrap">
                <div class="tools">
                    <img src="img/design-icon.svg" alt="" class="tool-icon">
@@ -42,23 +41,21 @@
                 <p id='about-blurb'>Hi! I'm a design oriented front-end developer with a passion for learning. I design and code fully responsive, interactive web pages with great user experiences and visual design.</p>
                 <div class="icon-holder">
                     <div class="btn"><a href="#projects-spacer">Projects</a></div>
-                    
-<!--                    <div class="btn"><a href="#footer-tagline">Contact</a></div>-->
                 </div>
             </div>
             
-            <a href="#about-spacer" id="d-arrow"><img src="img/expand-button%20(1).png"  alt="" ></a>
+            <div id="arrow-holder"><a href="#about-spacer" id="d-arrow"><i class="fas fa-sort-down"></i></a></div>
             
         </div>
         
         <div id="about-spacer" class="spacer"></div>
         
     <div class="wrap">
-        <div class="about-me-section-wrap" >
+        <div class="about-me-section-wrap section" >
            <div class="about-me" id="about-me-link">
                 <div class="section-t-card" id="about-card"><h1 class="section-title">About me</h1></div>
                 <img src="img/ityaboi.jpg" alt="Kyle Abarquez" id="me">
-                <div id="r-btn"><p><a href="">RESUME <i class="fas fa-file-download"></i></a></p></div>
+                <div id="r-btn"><p><a href="">RESUME  <i class="fas fa-file-download"></i></a></p></div>
                 <p>Hi, I'm Kyle! I've been teaching myself web design and front end development since 2016 and am currently a student of UCI's UX/UI bootcamp course. I'm always looking to further my knowledge and love putting my skills to use in the creation of well thought out projects. I aim to set myself apart with my combination of technical front-end knowledge and eye for beautiful user-centric design.</p>
             </div>
             <div class="skills">
@@ -82,7 +79,7 @@
         <div id="projects-spacer" class="spacer"></div>
         
         <div class="section-t-card" id="projects-card"><h1 class="section-title" id="projects-link">Projects</h1></div>
-            <div class="project-wrap" id="project-link">
+            <div class="project-wrap section" id="project-link">
                 <div class="project-card">
                    <a href="calculator/index.html" target="_blank">
                         <div class="project-title-pic">
@@ -163,11 +160,9 @@
                 </div>
             </div>
             
-        <div class="contact-info">
-             <p><i class="far fa-envelope"></i> Contact</p>
-        </div>  
     </div>
     <footer id="footer">
+       <p class="contact-info"><i class="far fa-envelope"></i> Contact</p>
         <p id="footer-tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 
         <p>Phone: <a href="tel:1-949-229-9691">+1(949)229-9691</a></p>
@@ -238,5 +233,6 @@ $('a[href*="#"]')
     }
   });
     </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
