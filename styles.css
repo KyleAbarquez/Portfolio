@@ -8,13 +8,22 @@
     box-sizing: border-box;
 }
 
+*:focus{
+    outline: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    background: black;
+    background: #282828;
     font-family: sans-serif;
     font-weight: 400;
     position: relative;
+}
+
+h4 {
+    color: #42c2f4;
+    font-weight: 100;
 }
 
 .wrap {
@@ -33,7 +42,7 @@ header {
     width: 100%;
     margin: 0 auto;
     transition: all 400ms ease-in-out 100ms;
-    background-color: black;
+    background-color: #282828;
 }
 
 .tools {
@@ -83,9 +92,9 @@ header {
 }
 
 @keyframes blink {
-    0%   {color: black;}
+    0%   {color: #282828;}
     50% {color: #42c2f4;}
-    100% {color: black;}
+    100% {color: #282828;}
 }
 
 @keyframes point {
@@ -282,7 +291,7 @@ nav {
         width: 100%;
         justify-content: space-around;
         margin: 0 auto;
-        background-color: black;
+        background-color: #282828;
     }
     
 nav ul li {
@@ -421,7 +430,7 @@ nav a:hover {
     justify-content: space-between;
 /*    background-image: url(img/pixel-stars-gif-4.gif);*/
     background-position: center;
-    background-color: black;
+    background-color: #282828;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -435,7 +444,7 @@ nav a:hover {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: #282828;
     max-width: 800px;
     max-height: 700px;
     margin:  auto;
@@ -628,7 +637,7 @@ nav a:hover {
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;
-    color: black;
+    color: #282828;
     margin: 0 auto;
     z-index: 1000000;
     font-weight: 600;

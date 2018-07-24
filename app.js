@@ -8,10 +8,10 @@ $(document).ready(function(){
         }
         
         else {
-            $("header").css({"background-color":"black"});
+            $("header").css({"background-color":"#282828"});
             $("#logo").css({"color":"#FFF"});
             $("nav a").css({"color":"#FFF"});
-            $("nav ul").css({"background-color":"black"});
+            $("nav ul").css({"background-color":"#282828"});
         }
     })
 })
