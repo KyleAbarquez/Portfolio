@@ -297,7 +297,7 @@ nav ul li {
         content: '';
         display: block;
         height: 4px;
-        background: #FFF;
+        background: transparent;
         position: absolute;
         top: -.5em;
         left: 0px;
