@@ -219,12 +219,13 @@ a {
 
 footer {
     text-align: center;
-    padding: 19px;
-    padding-top: 30px;
+    padding: px;
+    padding-top: 25px;
     color: black;
     background-color: #42c2f4;
     margin-top: 5em;
     font-weight: ;
+    margin-bottom: -17px;
 }
 
 #footer-tagline {
@@ -281,6 +282,7 @@ nav {
         width: 100%;
         justify-content: space-around;
         margin: 0 auto;
+        background-color: black;
     }
     
 nav ul li {
@@ -481,6 +483,7 @@ nav a:hover {
 }
 
 #me {
+    transform: translate(0px, -10px);
     max-width: 250px;
     border-radius: 10px;
 }
@@ -564,12 +567,12 @@ nav a:hover {
 }
 
 .project-cat {
-    color: #31f948;
+    color: #42c2f4;
     padding: 8px;
     width: 150px;
     margin: 0 auto;
     margin-bottom: 8px;
-    border: solid 2px #31f948;
+    border: solid 2px #42c2f4;
     font-weight: 300;
     text-transform: uppercase;
 }
