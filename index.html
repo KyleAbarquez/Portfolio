@@ -18,7 +18,7 @@
 <!--        <input type="checkbox" id="nav-toggle" class="nav-toggle">-->
         <nav class="navbar">
             <ul>
-                <li><a href="#about-spacer" class="one-star">About</a></li>
+                <li><a href="#arrow-holder" class="one-star">About</a></li>
                 <li ><a href="#projects-spacer" class="two-star">Projects</a></li>
                 <li ><a href="#footer-tagline" class="three-star">Contact</a></li>
              </ul>
@@ -44,14 +44,13 @@
                 </div>
             </div>
             
-            <div id="arrow-holder"><a href="#about-spacer" id="d-arrow"><i class="fas fa-sort-down"></i></a></div>
+            <div id="arrow-holder"><a href="#arrow-holder" id="d-arrow"><i class="fas fa-sort-down"></i></a></div>
             
         </div>
         
-        <div id="about-spacer" class="spacer"></div>
         
     <div class="wrap">
-        <div class="about-me-section-wrap section" >
+        <div class="about-me-section-wrap section" id="about-link" >
            <div class="about-me" id="about-me-link">
                 <div class="section-t-card" id="about-card"><h1 class="section-title">About me</h1></div>
                 <img src="img/ityaboi.jpg" alt="Kyle Abarquez" id="me">
@@ -161,8 +160,9 @@
             </div>
             
     </div>
+    <div id="contact-spacer" class="spacer"></div>
     <footer id="footer">
-       <p class="contact-info"><i class="far fa-envelope"></i> Contact</p>
+       <p class="contact-info"><span class="star">*</span>Contact<span class="star">*</span></p>
         <p id="footer-tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 
         <p>Phone: <a href="tel:1-949-229-9691">+1(949)229-9691</a></p>

@@ -149,9 +149,15 @@ header {
     margin-bottom: 16px;
 }
 
-#projects-spacer {
-    height: 80px;
+#projects-spacer{
+    height: 110px;
 }
+
+#contact-spacer {
+    height: 180px;
+}
+
+
 
 ul {
     list-style: none;
@@ -622,7 +628,10 @@ nav a:hover {
     color: black;
     margin: 0 auto;
     z-index: 1000000;
+    
 }
+
+
 
 /******** ICONS PAGE ********/
 
@@ -798,7 +807,6 @@ nav a:hover {
         all: unset;
         grid-column: 3 / 4;
         display: flex;
-        
         justify-content: flex-end;
         align-items: center;
         width: 100%;
@@ -812,7 +820,8 @@ nav a:hover {
         width: 100%;
         justify-content: space-around;
         margin: 0 auto;
-        padding-bottom: 0px;
+        padding: 0;
+        
     }
     
     nav a {
@@ -843,6 +852,8 @@ nav a:hover {
     nav a:hover::before {
         transform: scale(1,1);
     }
+    
+    
     
 }
 
