@@ -663,11 +663,11 @@ nav a:hover {
     
     #logo {
         font-size: 20px;
-        transform: translate(0px, -20px)
+        transform: translate(0px, -27px)
     }
     
     nav ul {
-        margin-top: -50px;
+        margin-top: -60px;
     }    
     
     nav ul li a {
@@ -675,18 +675,16 @@ nav a:hover {
     }
     
     nav ul {
-        padding-bottom: 0;
+        padding-bottom: 8px;
     }
     
     #me {
         width: 100%;
     }
     
-/*
     header {
         height: 50px;
     }
-*/
     
 }
 
