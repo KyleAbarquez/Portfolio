@@ -33,6 +33,7 @@ header {
     width: 100%;
     margin: 0 auto;
     transition: all 400ms ease-in-out 100ms;
+    background-color: black;
 }
 
 .tools {
@@ -104,13 +105,23 @@ header {
 }
 
 .section-title {
-    font-family: 'fake_receipt', sans-serif;
+    font-family: 'roboto', sans-serif;
     text-align: center;
     font-size: 25px;
     margin-top: 24px;
     color: #42c2f4;
+    text-transform: uppercase;
 }
- 
+
+.p-title {
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 24px;
+    color: #42c2f4;
+    text-transform: none;
+}
+
 .section-t-card {
     font-family: 'fake_receipt', sans-serif;
     border-radius: 12px; 
@@ -255,24 +266,6 @@ footer {
 
 /******** NAVIGATION STYLING ********/
 
-
-
-/*
-nav {
-    position: absolute;
-    text-align: left;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 1000px;
-    transform: scale(1, 1);
-    transform-origin: top;
-    padding-top: 10px;
-    padding-left: 2em;
-    transition: all 400ms ease-in-out 100ms;
-}
-*/
-
 nav {
         all: unset;
         grid-column: 3 / 4;
@@ -366,13 +359,14 @@ nav a:hover {
 
 #logo {
     display: inline-block;
-    font-family: 'gugi', sans-serif;
+    font-family: 'roboto', sans-serif;
     letter-spacing: 3px;
     color: #FFF;
     transition: all 150ms ease-in-out;
     margin-left: 0px;
     font-size: 28px;
-    font-weight:100;
+    font-weight:500;
+    text-transform: uppercase
 }
 
 #logo:hover {
@@ -408,14 +402,15 @@ nav a:hover {
 /******** ABOUT ME ********/
 
 #title {
-    font-family: 'fake_receipt', sans-serif;
+    font-family: 'roboto', sans-serif;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0;
-    font-weight: 100;
+    font-weight: 700;
     line-height: 28px;
     font-size: 18px;
     color: #42c2f4;
+    text-transform: uppercase
 }
 
 .about-container {
@@ -469,14 +464,14 @@ nav a:hover {
 }
 
 #about-blurb {
-    font-family: 'fake_receipt', sans-serif;
+    font-family: 'roboto', sans-serif;
     line-height: 1.5em;
     text-align: center;
     margin-top: -15px;
     font-size: 14px;
     padding: 5px;
     color: #FFF;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
 }
 
 .about-me-section-wrap {
@@ -487,7 +482,7 @@ nav a:hover {
 
 #me {
     max-width: 250px;
-    box-shadow:  5px;
+    border-radius: 10px;
 }
 
 .about-me-section-wrap p {
@@ -626,13 +621,14 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'fake_receipt', cursive;
+    font-family: 'roboto', cursive;
+    text-transform: uppercase;
     text-align: center;
     font-size: 25px;
     color: black;
     margin: 0 auto;
     z-index: 1000000;
-    
+    font-weight: 600;
 }
 
 
@@ -663,6 +659,7 @@ nav a:hover {
     
     #title {
         font-size: 28px;
+        letter-spacing: 2px;
         line-height: 47px;
     }
 }
@@ -838,31 +835,6 @@ nav a:hover {
     margin-bottom: 1.5em;
     margin-left: 1em;
     }
-    
-/*
-    nav a::before {
-        content: '';
-        display: block;
-        height: 4px;
-        background: #FFF;
-        position: absolute;
-        top: -.5em;
-        left: 0px;
-        right: 0;
-        transform: scale(0,1);
-        transition: transform ease-in-out 250ms;
-        transform-origin: center;
-    }
-*/
-    
-/*
-    nav a:hover::before {
-        transform: scale(1,1);
-    }
-*/
-    
-    
-    
 }
 
 @media screen and (min-width: 1000px){
@@ -914,26 +886,6 @@ nav a:hover {
         opacity: 1;
         position: relative;
     }
-    
-/*
-    nav a::before {
-        content: '';
-        display: block;
-        height: 4px;
-        background: #FFF;
-        position: absolute;
-        top: -.5em;
-        left: 0px;
-        right: 0;
-        transform: scale(0,1);
-        transition: transform ease-in-out 250ms;
-        transform-origin: center;
-    }
-    
-    nav a:hover::before {
-        transform: scale(1,1);
-    }
-*/
 }
 
 @media screen and (min-width: 1300px) {
