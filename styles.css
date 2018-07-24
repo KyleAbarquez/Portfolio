@@ -238,7 +238,7 @@ footer {
     color: black;
     padding: .8em;
     text-align: center;
-    background: linear-gradient(0deg, #008fb7, #42c2f4);
+    background: linear-gradient(0deg, #42c2f4, #42c2f4);
 }
 
 .footer-push {
@@ -299,6 +299,7 @@ nav ul li {
         position: relative;
     }
     
+/*
     nav a::before {
         content: '';
         display: block;
@@ -316,6 +317,7 @@ nav ul li {
     nav a:hover::before {
         transform: scale(1,1);
     }
+*/
 
 nav ul {
     margin: 0;
@@ -342,6 +344,7 @@ nav a {
 
 nav a:hover {
     font-size: 22px;
+    animation: blink 1s infinite;
 }
 
 .btn a:hover {
@@ -375,6 +378,7 @@ nav a:hover {
 #logo:hover {
     color: #42c2f4;
     cursor: pointer;
+    animation: blink 1s infinite;
 }
 
 .fa-file-download {
@@ -565,12 +569,12 @@ nav a:hover {
 }
 
 .project-cat {
-    color: #8c3af2;
+    color: #31f948;
     padding: 8px;
     width: 150px;
     margin: 0 auto;
     margin-bottom: 8px;
-    border: solid 2px #8c3af2;
+    border: solid 2px #31f948;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -835,6 +839,7 @@ nav a:hover {
     margin-left: 1em;
     }
     
+/*
     nav a::before {
         content: '';
         display: block;
@@ -848,10 +853,13 @@ nav a:hover {
         transition: transform ease-in-out 250ms;
         transform-origin: center;
     }
+*/
     
+/*
     nav a:hover::before {
         transform: scale(1,1);
     }
+*/
     
     
     
@@ -907,6 +915,7 @@ nav a:hover {
         position: relative;
     }
     
+/*
     nav a::before {
         content: '';
         display: block;
@@ -924,6 +933,7 @@ nav a:hover {
     nav a:hover::before {
         transform: scale(1,1);
     }
+*/
 }
 
 @media screen and (min-width: 1300px) {
