@@ -336,11 +336,11 @@ header::after {
     background: #42c2f4;
     top: 100%;
     right: 0%;
-/*    clip-path: circle(0px at top right);*/
-    height: 0px;
-    overflow: hidden;
-    transition: transform ease-in-out 500ms;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 100% 0);
+    transition: all ease-in-out 800ms;
 }
+
+
 
 .site-nav ul {
     list-style: none;
@@ -373,8 +373,7 @@ header::after {
 }
 
 .site-nav-open {
-/*    clip-path: circle(100%);*/
-    height: auto;
+    clip-path: polygon(0 0, 100% 0%, 100% 99%, 0% 100%);
 }
 
 .menu-toggle {
