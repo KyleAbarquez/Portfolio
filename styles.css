@@ -914,14 +914,15 @@ header::after {
     .about-1 {
         display: flex;
         flex-direction: column;
-        flex-grow: 1;
+        flex-grow: 2;
         align-items: flex-end; 
         margin-right: 5em;
     }
     
     #me {
        width: 100%;
-       max-width: 500px;
+        min-width: 350px;
+       max-width: 400px;
     }
     
     .about-2 {
@@ -971,7 +972,7 @@ header::after {
     }
     
     #skills-card {
-        margin-top: 110px;
+        margin-top: 10px;
     }
 }
 
