@@ -83,6 +83,8 @@ header {
     align-self: center;
 }
 
+
+
 #d-arrow i {
     height: 50px;
     width: 60px;
@@ -603,6 +605,11 @@ header::after {
     margin-bottom: 0;
 }
 
+.project-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -627,10 +634,6 @@ header::after {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
-}
-
-.pic-holder {
-    
 }
 
 .project-pic {
@@ -685,6 +688,15 @@ header::after {
     max-width: 48px;
 }
 
+#p-arrow {
+    display: none;
+    height: 50px;
+    width: 60px;
+    animation: blink 1.5s infinite;
+    text-align: center;
+    font-size: 48px;
+}
+
 /******** CONTACT ********/
 
 #contact-title {
@@ -705,8 +717,6 @@ header::after {
     font-weight: 600;
     color: #42c2f4;
 }
-
-
 
 #contact-scrn {
     height: 100vh;
@@ -832,6 +842,10 @@ header::after {
     
     #abt-arrow {
         transform: translate(0px, -70px);
+        display: block;
+    }
+    
+    #p-arrow {
         display: block;
     }
     
