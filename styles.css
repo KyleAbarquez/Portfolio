@@ -174,9 +174,8 @@ header {
 
 #skills-card {
     max-width: 420px;
-    margin-top: 20px;
+    margin-top: 60px;
     padding-bottom: 3px;
-    
 }
 
 #projects-card {
@@ -337,10 +336,8 @@ header::after {
     top: 100%;
     right: 0%;
     clip-path: polygon(0 0, 100% 0, 100% 99%, 100% 0);
-    transition: clip-path ease-in-out 800ms;
+    transition: clip-path ease-in-out 400ms;
 }
-
-
 
 .site-nav ul {
     list-style: none;
