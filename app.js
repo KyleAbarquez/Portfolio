@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(window).scroll(function(){
-        if($(window).scrollTop() > 1020){
+        if($(window).scrollTop() > 820){
             $(".hi").addClass('bounce-4');
         }
     })
