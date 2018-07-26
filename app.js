@@ -2,18 +2,32 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if($(window).scrollTop() > 0){
             $("header").css({"background-color":"#42c2f4"});
-            $("#logo").css({"color":"black"});
+            $(".logo a").css({"color":"black"});
             $("nav a").css({"color":"black"});
-            $("nav ul").css({"background-color":"#42c2f4"});
         }
         
         else {
-            $("header").css({"background-color":"#282828"});
-            $("#logo").css({"color":"#FFF"});
+            $("header").css({"background-color":"#1c1c1c"});
+            $(".logo a").css({"color":"#FFF"});
             $("nav a").css({"color":"#FFF"});
-            $("nav ul").css({"background-color":"#282828"});
         }
     })
+})
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 1020){
+            $(".hi").addClass('bounce-4');
+        }
+    })
+    
+    $('.menu-toggle').click(function(){
+    
+        $('.site-nav').toggleClass('site-nav-open');
+        $(this).toggleClass('open');
+    
+    })
+    
 })
 
 //$(document).ready(function(){
