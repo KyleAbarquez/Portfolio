@@ -77,15 +77,15 @@ header {
     align-items: center;
 }
 
-#d-arrow {
+.d-arrow {
     max-height: 128px;
     max-width: 128px;
     align-self: center;
+    display: none;
 }
 
-
-
-#d-arrow i {
+.d-arrow i {
+    display: none;
     height: 50px;
     width: 60px;
     animation: blink 1.5s infinite;
@@ -568,6 +568,7 @@ header::after {
     display: none;
 }
 
+
 /**** SKILLS ****/
 
 #skills {
@@ -686,15 +687,6 @@ header::after {
 
 #up-arrow {
     max-width: 48px;
-}
-
-#p-arrow {
-    display: none;
-    height: 50px;
-    width: 60px;
-    animation: blink 1.5s infinite;
-    text-align: center;
-    font-size: 48px;
 }
 
 /******** CONTACT ********/
@@ -842,11 +834,8 @@ header::after {
     
     #abt-arrow {
         transform: translate(0px, -70px);
-        display: block;
-    }
-    
-    #p-arrow {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     
     .menu-toggle {
@@ -884,6 +873,11 @@ header::after {
     
     .section-title {
         font-size: 28px;
+    }
+    
+    .d-arrow i,
+    .d-arrow{
+        display: block;
     }
 }
 
