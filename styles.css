@@ -4,6 +4,43 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi|Permanent+Marker|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
+.bounce-4 {
+    animation-name: bounce-4;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-4 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-100px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+@keyframes blink {
+    0%   {color: #1c1c1c;}
+    50% {color: #42c2f4;}
+    100% {color: #1c1c1c;}
+}
+
+@keyframes pulse {
+    0%   {transform: scale();}
+    50% {transform: scale(1.1);}
+    100% {transform: scale();}
+}
+
+@keyframes point {
+    0%   {}
+    50% {transform: translate(0, 1.5em);}
+    100% {}
+}
+
+@keyframes point-up {
+    0%   {}
+    50% {transform: translate(0, -1.5em);}
+    100% {}
+}
+
 * {
     box-sizing: border-box;
 }
@@ -91,37 +128,6 @@ header {
     animation: blink 1.5s infinite;
     text-align: center;
     font-size: 48px;
-}
-
-.bounce-4 {
-    animation-name: bounce-4;
-    animation-timing-function: ease;
-}
-
-@keyframes bounce-4 {
-    0%   { transform: scale(1,1)    translateY(0); }
-    10%  { transform: scale(1.1,.9) translateY(0); }
-    30%  { transform: scale(.9,1.1) translateY(-100px); }
-    50%  { transform: scale(1,1)    translateY(0); }
-    100% { transform: scale(1,1)    translateY(0); }
-}
-
-@keyframes blink {
-    0%   {color: #1c1c1c;}
-    50% {color: #42c2f4;}
-    100% {color: #1c1c1c;}
-}
-
-@keyframes point {
-    0%   {}
-    50% {transform: translate(0, 1.5em);}
-    100% {}
-}
-
-@keyframes point-up {
-    0%   {}
-    50% {transform: translate(0, -1.5em);}
-    100% {}
 }
 
 .section-title {
@@ -233,6 +239,7 @@ a {
     font-weight: 600;
     border: solid 3px #42c2f4;
     margin-top: 20px;
+    animation: pulse 3s infinite;
 }
 
 footer {
@@ -567,7 +574,6 @@ header::after {
     transform: translate(0px, -70px);
     display: none;
 }
-
 
 /**** SKILLS ****/
 
