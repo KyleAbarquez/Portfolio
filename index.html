@@ -12,6 +12,17 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
+    <!--CSS Spinner-->
+   <div class="spinner-wrapper">
+        <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+        </div>
+   </div>
+   
    <div id="top"></div>
     <header>
         <div class="container">
@@ -59,7 +70,7 @@
                 </div>
                 <div class="about-2">
                     <h1 class="hi">Hi!</h1>
-                    <p>I'm Kyle! I've been teaching myself web design and front end development since 2016 and am currently a student of UCI's UX/UI bootcamp course. I'm always looking to further my knowledge and love putting my skills to use in the creation of well thought out projects. I aim to set myself apart with my combination of technical front-end knowledge and eye for clean and focused user-centric design.</p>
+                    <p>I'm Kyle! I've been teaching myself web design and front end development since 2016 and am a graduate of UCI's UX/UI bootcamp course. I'm always looking to further my knowledge and love putting my skills to use in the creation of well thought out projects. I aim to set myself apart with my combination of technical front-end knowledge and eye for clean and focused user-centric design. I am ready to dedicate myself entirely to the art of web design and development!</p>
                     <div id="r-btn"><p><a href="">RESUME  <i class="fas fa-file-download"></i></a></p></div>
                 </div>
             </div>
@@ -74,7 +85,7 @@
                         <li>Javascript</li>
                         <li>Jquery</li>
                         <li>Responsive Web Design</li>
-                        <li>Bootstrap</li>
+                        <li>Bootstrap 4</li>
                         <li>UX/UI Design</li>
                         <li>Adobe Creative Suite</li>
                         <li>Sketch app</li>
@@ -90,38 +101,49 @@
         
         <div class="section-t-card" id="projects-card"><h1 class="section-title" id="projects-link">Projects</h1></div>
             <div class="project-wrap section" id="project-link">
+                
+                <div class="project-card">
+                   <a href="https://kyleabarquez.github.io/The_Frogs/" target="_blank">
+                        <div class="project-title-pic">
+                            <h1 class="section-title p-title">Concept Site: Band Page</h1>
+                            <div class="pic-holder">
+                                <img src="mockups/the_frogs_mockup.jpeg" class="project-pic" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-description">
+                        <p>This is a fully responsive site I made about a fictional band called "The Frogs". I used vanilla CSS to style this page. I saw this project as an opportunity to make an extra stylized design that was both minimal and easily digestible. This site is an example of why I love web design- because it can be used as a tool of expression and style!</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                   <a href="https://kyleabarquez.github.io/Design_Day/" target="_blank">
+                        <div class="project-title-pic">
+                            <h1 class="section-title p-title">Bootstrap 4 Site: Design Day</h1>
+                            <div class="pic-holder">
+                                <img src="mockups/Design_day_mockup.jpeg"; class="project-pic" alt="Bootstrap Site">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-description">
+                        <p>This is fully responsive site I made with Bootstrap 4 about a fictitous web design conference. This project gave me great experience with using a variety of bootstrap layout techniques and modules. I had fun mixing the default bootstrap styles with my own custom CSS to give the site its own unique look.</p>
+                    </div>
+                </div>
                 <div class="project-card">
                    <a href="calculator/index.html" target="_blank">
                         <div class="project-title-pic">
                             <h1 class="section-title p-title">My JavaScript Calculator</h1>
-                            <div class="project-cat">Front-End Dev.</div>
                             <div class="pic-holder">
-                                <img src="img/calcc-01.png" class="project-pic" alt="JavaScript Calculator">
+                                <img src="mockups/smartmockups_jktgdm96.jpg" class="project-pic" alt="JavaScript Calculator">
                             </div>
                         </div>
                     </a>
                     <div class="project-description">
-                        <p> A simple calculator with elegant design. This project was mainly an excercise in JavaScript DOM manipulation and logic. </p>
-                    </div>
-                </div>
-                <div class="project-card">
-                   <a href="bootstrap-site/index.html" target="_blank">
-                        <div class="project-title-pic">
-                            <h1 class="section-title p-title">Bootstrap Site: Frog Con</h1>
-                            <div class="project-cat">Front-End Dev.</div>
-                            <div class="pic-holder">
-                                <img src="img/frogconn-01-01.png"; class="project-pic" alt="Bootstrap Site">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="project-description">
-                        <p>This is a simple and clean site I made about a fictitous frog convention. My hobby is keeping dart frogs so this project was made mostly for fun. This project gave me great experience with using a variety of bootstrap layout techniques and modules.</p>
+                        <p> A simple calculator with elegant design. This project was mainly an excercise in JavaScript DOM manipulation and logic. This project really strenghthened my JavaScript fundamentals and gave me a clear idea of how these techniques can be used in the creation of interactive web design projects.</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-title-pic">
                         <h1 class="section-title p-title">Volunteer Match Site Redesign</h1>
-                        <div class="project-cat uxui">UX/UI Design</div>
                         <div class="pic-holder">
                             <img src="img/vmm-01.png" class="project-pic" alt="">
                         </div>
@@ -130,24 +152,10 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolore nobis voluptates, asperiores doloremque neque, totam minima qui ad perferendis reiciendis, obcaecati autem, dolores laboriosam laudantium. </p>
                     </div>
                 </div>
-                <div class="project-card">
-                   <a href="icon-gallery.html">
-                        <div class="project-title-pic">
-                            <h1 class="section-title p-title">SVG Iconography Sets</h1>
-                            <div class="project-cat uxui">UX/UI Design</div>
-                            <div class="pic-holder">
-                                <img src="img/froggyicons-01.png" class="project-pic" alt="">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="project-description">
-                        <p>I have fun designing svg icons in Adobe Illustrator! Here are some icon sets that I have done.</p>
-                    </div>
-                </div>
+                
                 <div class="project-card">
                     <div class="project-title-pic">
-                        <h1 class="section-title p-title">HTML Emails</h1>
-                        <div class="project-cat">Front-End Dev.</div>
+                        <h1 class="section-title p-title">RESPONSIVE HTML Emails</h1>
                         <div class="pic-holder">
                            <img src="img/gsr-01.png" class="project-pic" alt="">
                         </div>
@@ -159,7 +167,6 @@
                 <div class="project-card">
                     <div class="project-title-pic">
                         <h1 class="section-title p-title">Jose Abarquez Engineering Site</h1>
-                        <div class="project-cat">Front-End Dev.</div>
                         <div class="pic-holder">
                             <img src="img/eee-01.png" class="project-pic" alt="">
                         </div>
@@ -178,17 +185,15 @@
         <div class="links">
             <p>Phone: <a href="tel:1-949-229-9691">+1(949)229-9691</a></p>
         <p id="email">Email: <a href="mailto:kabarquez8@gmail.com">Kabarquez8@gmail.com</a></p>
+        <div class="contact-icons">
+            <a href="https://github.com/KyleAbarquez" target="_blank"><img src="img/gh.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/kyle-abarquez-222687154/" target="_blank"><img src="img/in.svg" alt=""></a>
         </div>
-        
+        </div>
        </div>
         
         <div class="copy">
-        <div class="icon-holder-footer">
-            <img src="img/gh.svg" class="social-icon" alt="">
-            <img src="img/in.svg" class="social-icon" alt="">
-            <img src="img/cp.svg" class="social-icon" alt="">
-        </div>
-        <p>Handcrafted by me! &copy Kyle Abarquez 2018</p>
+        <p>&copy KYLE ABARQUEZ 2018</p>
     </div>
     </div>
     
@@ -210,6 +215,19 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        $(window).on("load", function() {
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+        });
     </script>
     <script>
         // Select all links with hashes
