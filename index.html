@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyle Abarquez</title>
-    <link rel="shortcut icon" type="image/png "href="img/noun_stars_81906_000000.png">
+    <link rel="shortcut icon" type="image/png "href="img/rocket-solid.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,6 +13,7 @@
 
 <body data-spy="scroll" data-target=".navbar">
     <!--CSS Spinner-->
+<!--
    <div class="spinner-wrapper">
         <div class="spinner">
           <div class="rect1"></div>
@@ -22,11 +23,12 @@
           <div class="rect5"></div>
         </div>
    </div>
+-->
    
    <div id="top"></div>
     <header>
         <div class="container">
-            <h1 class="logo"><a href="#top"><span>Kyle</span> Abarquez</a></h1>
+            <h1 class="logo"><a href="#top"><i class="fas fa-rocket" id="rocket"></i><span> Kyle</span> Abarquez</a></h1>
             
             <nav class="site-nav">
                 <ul>
@@ -49,7 +51,7 @@
                 <div id="plus">+</div>
                 <img src="img/code-icon.svg" alt="" class="tool-icon">  
             </div>
-            <h1 id="title">Web Designer & Front-End Developer</h1>
+            <h1 id="title">UX/UI Designer & Front-End Developer</h1>
             <p id='about-blurb'>Hi! I'm a design oriented front-end developer with a passion for learning. I design and code fully responsive, interactive web pages with great user experiences and visual design.</p>
             <div class="icon-holder">
                 <div class="btn"><a href="#projects-spacer">Projects</a></div>
@@ -69,8 +71,8 @@
                     
                 </div>
                 <div class="about-2">
-                    <h1 class="hi">Hi!</h1>
-                    <p>I'm Kyle! I've been teaching myself web design and front end development since 2016 and am a graduate of UCI's UX/UI bootcamp course. I'm always looking to further my knowledge and love putting my skills to use in the creation of well thought out projects. I aim to set myself apart with my combination of technical front-end knowledge and eye for clean and focused user-centric design. I am ready to dedicate myself entirely to the art of web design and development!</p>
+                    <h1 class="hi">Hi, I'm Kyle!</h1>
+                    <p>Borrowing from the words of the late and great Bruce Lee, I truly believe that "simplicity is the key to brilliance". I let this sentiment guide me in regards to most aspects of life as well as in my design decisions. <br>    I've been teaching myself web design and front end development since 2016 and am a graduate of UCI's UX/UI bootcamp course. I'm always looking to further my knowledge and love putting my skills to use in the design and coding of well thought out projects. I aim to set myself apart with my combination of technical front-end knowledge and eye for clean and focused user-centric design.</p>
                     <div id="r-btn"><p><a href="Kyle_Abarquez_Resume_v2.pdf" download>RESUME  <i class="fas fa-file-download"></i></a></p></div>
                 </div>
             </div>
@@ -82,15 +84,15 @@
                 <ul id="skills-list">
                         <li>HTML5</li>
                         <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>Jquery</li>
-                        <li>Responsive Web Design</li>
                         <li>Bootstrap 4</li>
-                        <li>UX/UI Design</li>
-                        <li>Adobe Creative Suite</li>
-                        <li>Sketch app</li>
-                        <li>Wireframing</li>
-                        <li>Prototyping</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Responsive Web Design</li>
+                        <li>UX / UI Design</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Sketch</li>
+                        <li>Wireframing / Prototyping</li>
                 </ul>
                </div>
                 <div id="arrow-holder" class="d-arrow"><a href="#projects-spacer" id="d-arrow"><i class="fas fa-sort-down"></i></a></div>
@@ -102,6 +104,7 @@
         <div class="section-t-card" id="projects-card"><h1 class="section-title" id="projects-link">Projects</h1></div>
             <div class="project-wrap section" id="project-link">
                 
+<!--
                 <div class="project-card">
                    <a href="https://kyleabarquez.github.io/The_Frogs/" target="_blank">
                         <div class="project-title-pic">
@@ -115,6 +118,7 @@
                         <p>This is a fully responsive site I made about a fictional band called "The Frogs". I used vanilla CSS to style this page. I saw this project as an opportunity to make an extra stylized design that was both minimal and easily digestible. This site is an example of why I love web design- because it can be used as a tool of expression and style!</p>
                     </div>
                 </div>
+-->
                 <div class="project-card">
                    <a href="https://kyleabarquez.github.io/Design_Day/" target="_blank">
                         <div class="project-title-pic">
@@ -128,6 +132,7 @@
                         <p>This is fully responsive site I made with Bootstrap 4 about a fictitous web design conference. This project gave me great experience with using a variety of bootstrap layout techniques and modules. I had fun mixing the default bootstrap styles with my own custom CSS to give the site its own unique look.</p>
                     </div>
                 </div>
+<!--
                 <div class="project-card">
                    <a href="calculator/index.html" target="_blank">
                         <div class="project-title-pic">
@@ -141,21 +146,23 @@
                         <p> A simple calculator with elegant design. This project was mainly an excercise in JavaScript DOM manipulation and logic. This project really strenghthened my JavaScript fundamentals and gave me a clear idea of how these techniques can be used in the creation of interactive web design projects.</p>
                     </div>
                 </div>
+-->
                 <div class="project-card">
                     <div class="project-title-pic">
                         <h1 class="section-title p-title">Volunteer Match Site Redesign</h1>
                         <div class="pic-holder">
-                            <img src="img/vmm-01.png" class="project-pic" alt="">
+                            <img src="mockups/vm_mockup.jpeg" class="project-pic" alt="">
                         </div>
                     </div>
                     <div class="project-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolore nobis voluptates, asperiores doloremque neque, totam minima qui ad perferendis reiciendis, obcaecati autem, dolores laboriosam laudantium. </p>
+                        <p>This case study details the research, design process, and prototyping of a redesign for volunteermatch.org. The redesign is meant to make to tailor the user experience for each individual user while streamlining the process of finding relevant volunteer opportunities. Technologies used include Sketch App and Adobe Illustrator.</p>
                     </div>
                 </div>
                 
+<!--
                 <div class="project-card">
                     <div class="project-title-pic">
-                        <h1 class="section-title p-title">RESPONSIVE HTML Emails</h1>
+                        <h1 class="section-title p-title">Responsive HTML Emails</h1>
                         <div class="pic-holder">
                            <img src="img/gsr-01.png" class="project-pic" alt="">
                         </div>
@@ -175,6 +182,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolore nobis voluptates, asperiores doloremque neque, totam minima qui ad perferendis reiciendis, obcaecati autem, dolores laboriosam laudantium. Laborum, id! Quidem quo officia officiis enim ullam. Quas ab ipsam ducimus impedit numquam.</p>
                     </div>
                 </div>
+-->
             </div>
             
     </div>
@@ -193,7 +201,7 @@
        </div>
         
         <div class="copy">
-        <p>&copy KYLE ABARQUEZ 2018</p>
+        <p>Handcrafted by me! &copy Kyle Abarquez 2018</p>
     </div>
     </div>
     
