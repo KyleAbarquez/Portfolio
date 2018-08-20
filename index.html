@@ -12,19 +12,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-    <!--CSS Spinner-->
-<!--
-   <div class="spinner-wrapper">
-        <div class="spinner">
-          <div class="rect1"></div>
-          <div class="rect2"></div>
-          <div class="rect3"></div>
-          <div class="rect4"></div>
-          <div class="rect5"></div>
-        </div>
-   </div>
--->
-   
    <div id="top"></div>
     <header>
         <div class="container">
@@ -64,11 +51,9 @@
     <div class="wrap">
         <div class="about-me-section-wrap section" id="about-link" >
            <div class="about-me" id="about-me-link">
-               
                 <div class="about-1">
                    <h1 class="hi">Hi!</h1> 
                     <img src="img/ityaboi.jpg" alt="Kyle Abarquez" id="me">
-                    
                 </div>
                 <div class="about-2">
                     <h1 class="hi">Hi, I'm Kyle!</h1>
@@ -155,7 +140,7 @@
                         </div>
                     </div>
                     <div class="project-description">
-                        <p>This case study details the research, design process, and prototyping of a redesign for volunteermatch.org. The redesign is meant to make to tailor the user experience for each individual user while streamlining the process of finding relevant volunteer opportunities. Technologies used include Sketch App and Adobe Illustrator.</p>
+                        <p>This case study details the research, design process, and prototyping of a redesign for volunteermatch.org. The new design streamlines the process of finding relevant volunteer opportunities and gives the UI a needed facelift. Technologies used include Sketch App and Adobe Illustrator.</p>
                     </div>
                 </div>
                 
@@ -184,26 +169,26 @@
                 </div>
 -->
             </div>
-            
     </div>
     <div id="contact-scrn">
        <div class="contact-1">
-           <p class="contact-info" id="contact-title">Contact</p>
-        <p id="footer-tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <div class="links">
-            <p>Phone: <a href="tel:1-949-229-9691">+1(949)229-9691</a></p>
-        <p id="email">Email: <a href="mailto:kabarquez8@gmail.com">Kabarquez8@gmail.com</a></p>
-        <div class="contact-icons">
-            <a href="https://github.com/KyleAbarquez" target="_blank"><img src="img/gh.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/kyle-abarquez-222687154/" target="_blank"><img src="img/in.svg" alt=""></a>
-        </div>
-        </div>
+            <p class="contact-info" id="contact-title">Contact</p>
+            <p id="footer-tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+            <div class="links">
+                <p>Phone: <a href="tel:1-949-229-9691">+1(949)229-9691</a></p>
+                <p id="email">Email: <a href="mailto:kabarquez8@gmail.com">Kabarquez8@gmail.com</a></p>
+                <div class="contact-icons">
+                    <a href="https://github.com/KyleAbarquez" target="_blank"><img src="img/gh.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/kyle-abarquez-222687154/" target="_blank"><img src="img/in.svg" alt=""></a>
+                </div>
+            </div>
        </div>
-        
         <div class="copy">
-        <p>Handcrafted by me! &copy Kyle Abarquez 2018</p>
+            <p>Handcrafted by me!<br> &copy Kyle Abarquez 2018</p>
+        </div>
     </div>
-    </div>
+    
+    <!-- SCRIPTS -->
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121979261-1"></script>
@@ -213,6 +198,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-121979261-1');
     </script>
+    
     <!-- Hotjar Tracking Code for https://kyleabarquez.github.io/Portfolio/ -->
     <script>
         (function(h,o,t,j,a,r){
@@ -224,56 +210,42 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    
+    <!-- SMOOTH SCROLL-->
     <script>
-        $(document).ready(function() {
-        //Preloader
-        $(window).on("load", function() {
-        preloaderFadeOutTime = 500;
-        function hidePreloader() {
-        var preloader = $('.spinner-wrapper');
-        preloader.fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-        });
-        });
-    </script>
-    <script>
-        // Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
+        $('a[href*="#"]')
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
