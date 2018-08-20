@@ -1,2 +1,2 @@
 # Portfolio
-This is my portfolio site. It displays my web design and front end work. 
+This is my portfolio site. It displays my UX/UI design and front end work. 
