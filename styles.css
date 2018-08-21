@@ -465,7 +465,7 @@ header::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(img/1x/squares40.png);
+    background-image: url(img/1x/squares24.png);
     background-position: center;
     background-color: #1c1c1c;
     background-repeat: no-repeat;
@@ -863,6 +863,21 @@ header::after {
     .d-arrow i,
     .d-arrow{
         display: block;
+    }
+    
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(img/1x/squares24.png);
+        background-position: center;
+        background-color: #1c1c1c;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+        margin: 0 auto;
+        align-content: center;
+        padding: 1em;
     }
 
     .about-me-section-wrap {
