@@ -465,6 +465,7 @@ header::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url(img/1x/squares40.png);
     background-position: center;
     background-color: #1c1c1c;
     background-repeat: no-repeat;
@@ -480,7 +481,7 @@ header::after {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    background-color: #1c1c1c;
+    background-color: transparent;
     max-width: 800px;
     max-height: 700px;
     margin:  auto;
