@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Abarquez</title>
+    <link rel="shortcut icon" type="image/png "href="img/rocket-solid.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+   <div id="top"></div>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><i class="fas fa-rocket" id="rocket"></i><span> Kyle</span> Abarquez</a></h1>
+            
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html#about-spacer">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects-spacer">Projects</a></li>
+                    <li><a href="#index.htmlcontact-scrn">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+    <div class="spacer"></div>
+    <div class="case-wrap">
+        <div class="title-card">
+            <p><span>UX/UI CASE STUDY:</span><br>DESIGNING A MORE PERSONAL VOLUNTEER OPPORTUNITY FINDING EXPERIENCE FOR VOLUNTEERMATCH.ORG</p>
+        </div>
+        <div class="case-section">
+            <h2>MY ROLE :</h2>
+            <p>I worked on this project with 2 teammates. We collaborated with strategizing and research.  My individual roles with this project were visual style design and high fidelity prototyping.</p>
+        </div>
+        <div class="case-section"> 
+            <h2>IN SHORT :</h2>
+            <p>VolunteerMatch is a website that is used for the purpose of pairing people with volunteer
+            opportunities that fit them. Through analysis of the current site in addition to research involving
+            user interviews, we observed that VolunteerMatch was not connecting users to fitting opportunities in an efficient enough manner. We set out to design a solution that addresses this problem. We also set out to improve feedback within the process by which users connect with and maintain contact with volunteer organizations. If you would like to skip to the finished prototype, feel free to click the button below.</p>
+            <div class="skip-btn"><a href="#proto-blurb">GO TO PROTOTYPE</a></div>
+        </div>
+        
+        <div class="section-card">
+            <p>RESEARCH</p>
+        </div>
+        <div class="case-section"> 
+            <h2>CURRENT SITE ANALYSIS :</h2>
+            <p>Research began by taking a look at the current site and finding areas that could be improved to better help users to find volunteer opportunities that fit them. The current site’s landing page is taken up primarily by information about the the organization Volunteer Match, itself. This page can serve the user better instead by presenting him or her with relevant opportunities from the get go. In addition to this, apart from looking dated, the site design is inconsistent across different parts of the site. This results in a disjointed feeling when browsing. Other specific areas of improvement are pointed out under each image below. </p>
+            <div class="case-img-grid">
+                <div class="case-img-card">
+                    <h3>1. LANDING PAGE</h3>
+                    <img src="img/vm_case_study_img/current_1.jpg" alt="">
+                    <p>The landing page presents the user with a hero image with the call to action being a search by location. This can be improved by giving the user more search options. The implementation of an advanced search option was thought of at this point. After the hero image, the rest of the page consists of information about Volunteer Match. This space can be better utilized to help users in finding relevant opportunities.</p>
+                </div>
+                <div class="case-img-card">
+                    <h3>2. SEARCH RESULTS PAGE</h3>
+                    <img src="img/vm_case_study_img/current_2.jpg" alt="">
+                    <p>The search results page design is strangely left justified. The space on the right is not utilized at all. Overall, the page looks dull. It can be improved by implementing a better layout design in addition to some colorful images to add visual interest and excitement. The use of a card style system to display results could be a nice solution for this.</p>
+                </div>
+                <div class="case-img-card">
+                    <h3>3. OPPORTUNITY DETAIL PAGE</h3>
+                    <img src="img/vm_case_study_img/current_3.jpg" alt="">
+                    <p>The opportunity detail page is one example of inconsistency in the site's design language. It switches to this off white color for no apparent reason. The page layout is awkward with information scattered around seemingly haphazardly. This page can be improved by organizing the information in a more thoughtful and aesthetically pleasing manner.</p>
+                </div>
+                <div class="case-img-card">
+                    <h3>4. USER PROFILE</h3>
+                    <img src="img/vm_case_study_img/current_4.jpg" alt="">
+                    <p>This page also suffers from the off white color design switch-up. In addition to this, it uses a tabbed navigation to switch between sections. In my opinion, this looks dated. This can be improved with a more modern design.</p>
+                </div>
+            </div>
+            <h2>USER INTERVIEWS :</h2>
+            <p>Our group interviewed several users of the site. From these interviews we were able to take away several pain points that users encounter when using the site. Here are some standout quotes that helped guide the direction of the re-design.</p>
+            <div class="quote-container">
+                <div>“It is never acknowledged that my application was received, reviewed, or even appreciated.”</div>
+                <div>“I don’t trust the site to do a good job of matching me. The profile builder looks old and outdated.”</div>
+                <div>“The search functionality is lacking a little bit. So I scroll a lot.”</div>
+            </div>
+            <div class="case-section"> 
+                <h2>TAKEAWAYS :</h2>
+                <p>From our site analysis and user interviews, we were able to isolate the specific pain-points which we would adress in the re-design. Some observations that were made during the current site analysis were confirmed by conducting the user interviews. These observations include the dated visual design as well as the inefficient search system. Our main takeaways from the research can be summarized below. These would be the key issues that the re-design would set out to tackle.</p>
+            </div>
+            <div class="box-container">
+                <div>
+                    <h3>1. Searching and Sifting</h3>
+                    <p>Users spend too much time sorting through search results (an average of 700+ results per search) resulting in increased drop-off rates</p>
+                </div>
+                <div>
+                    <h3>2. Irrelevant Results</h3>
+                    <p>Results that do no connect with the user are seen as incorrect and do not instill confidence in the service.</p>
+                </div>
+                <div>
+                    <h3>3. Trying to Connect</h3>
+                    <p>Users report problems when trying to connect with the organizers. A lot of times there is no feedback when an application is submitted, resulting in distrust.</p>
+                </div>
+            </div>
+            <div class="case-section" id="solution"> 
+                <h2>PROPOSED SOLUTION :</h2>
+                <h5>The re-design will address the mentioned pain points in the following ways:</h5>
+                <ul>
+                    <li>Users will view fitting opportunities in a visually interesting way as soon as they land on the site.</li>
+                    <li>The search/match results will be accurate and relevant.</li>
+                    <li>Feedback given to the user in the process of connecting with volunteer organizers will be improved.</li>
+                    <li>UI design will be updated to a consistent, clean, and modern look.</li>li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-card" id="design">
+                <p>THE DESIGN PROCESS</p>
+        </div>
+        <div class="case-section"> 
+                <h2>PAPER SKETCHES</h2>
+                <p>The design process started with rough wireframe sketches. I laid out the basic layout and flow of the design. Major design decisions are detailed under each image below.</p>
+                <div class="paper-set-wrap">
+                    <img src="img/vm_case_study_img/paper_set_1a.png" alt="">
+                    <div>
+                        <h3>A: Landing Page</h3>
+                        <p>This is the initial concept for the landing page. It maintains the search call to action but replaces the majority of the original content with a card style system to display relevant opportunities to the user. These cards would be a major part of the site’s re-design. The information regarding Volunteer Match would be consolidated to a video at the end of the page.</p>
+                        <h3>B: Advanced Search</h3>
+                        <p>This is the first version of an advanced search implementation. The idea was that the user would press a button which would reveal all of the advanced search options via an accordion style menu. This would later be revised in favor of a more clean and focused modal implementation.</p>
+                    </div>
+                </div>
+                <div class="paper-set-wrap">
+                    <img src="img/vm_case_study_img/paper-set-1b.png" alt="">
+                    <div>
+                        <h3>C: Opportunity Detail Page</h3>
+                        <p>We wanted to give the opportunity detail page a more structured layout. This layout was designed to present all of the important information regarding the event in an organized manner which was easy to follow.</p>
+                        <h3>D: User Profile Page</h3>
+                        <p>A major feature of the re-design was improving profile personalization. The thought behind improving this would be that it would allow users to match with opportunities tailored to their interests, skills, in addition to location. A resume drag and drop feature was also added.</p>
+                    </div>
+                </div>
+                <h2>LO-FI WIREFRAMES</h2>
+                <p>After the basic layout of the design was decided upon, we made these wireframes. Some changes were made between these two design stages. The advanced search was changed to a modal that was triggered by a button press on the landing page. This design felt cleaner and focused since the visual distractions of the rest of the page would be darkened and blurred in the background.
+                At this stage, we also really fine-tuned how users would interact with their profile page. As a result, we designed a page in which users would edit their profile with their relevant information.
+                Additonally, a message modal was designed with the purpose of giving the user an opportunity to provide more information specific to the opportunity they were inquiring about. The thought behind this was that it would increase chances of a response from volunteer organizers.   
+                </p>
+                <div class="lofi-wrap">
+                    <img src="img/vm_case_study_img/lofi_1.png" alt="">
+                    <img src="img/vm_case_study_img/lofi_2.png" alt="">
+                    <img src="img/vm_case_study_img/lofi_3.png" alt="">
+                    <img src="img/vm_case_study_img/lofi_4.png" alt="">
+                    <img src="img/vm_case_study_img/lofi_5.png" alt="">
+                    <img src="img/vm_case_study_img/lofi_6.png" alt="">
+                    <img src="img/vm_case_study_img/lofi_7.png" alt="">
+                    <img src="img/vm_case_study_img/lofi_8.png" alt="">
+                </div>
+        </div>
+        <div class="case-section">
+              <h2>STYLE GUIDE</h2>
+               <div id="style-guide">
+                   <img src="img/vm_case_study_img/s_g.png" alt="">
+                    <p>I created a style guide in order to really nail down a visual style. I kept the colors of the existing site while updating certain UI elements and fonts to give them a more clean and modern look. I wanted the site to look friendly which is why I favored rounded corners on most of the UI elements as well as bright, cheery images. I used clean, flat colors with simple, yet elegant UI elements to give the existing pages a needed facelift. I ended up going with some different styles on the final prototype, but this guide really helped to guide the overall look and feel of the site.</p>
+               </div> 
+        </div>
+        <div class="section-card">
+            <p>THE PROTOTYPE</p>
+        </div>
+        
+        <p id="proto-blurb">In this video, I showcase the design, main functionality, and a couple of user flows of the redesign. The prototype being shown was made by me in Sketch. Thanks for checking it out!</p>
+        
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/oQljQ4rJcPU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        
+    </div> <!-- END CASE WRAP -->
+    
+    <div class="copy">
+            <p>Handcrafted by me!<br> &copy Kyle Abarquez 2018</p>
+        </div>
+    
+    <!-- SCRIPTS -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121979261-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121979261-1');
+    </script>
+    
+    <!-- Hotjar Tracking Code for https://kyleabarquez.github.io/Portfolio/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:946403,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    
+    <!-- SMOOTH SCROLL-->
+    <script>
+        $('a[href*="#"]')
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
