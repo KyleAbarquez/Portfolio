@@ -764,7 +764,7 @@ header::after {
 
 .title-card {
     font-family: "Roboto", sans-serif;
-    background-color: red;
+    background-color: #1c1c1c;
     margin-top: 1em;
     text-align: center;
     height: 250px;
@@ -787,6 +787,12 @@ header::after {
     transition: all ease-in-out 300ms;
     margin: 0 auto;
     border-radius: 5px;
+}
+
+#proto-btn {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    width: 200px;
 }
 
 .skip-btn:hover {
@@ -885,8 +891,12 @@ header::after {
     grid-gap: 1em;
 }
 
+.box-container h3 {
+    color: #FFF;
+}
+
 .box-container div{
-    background-color: #42c2f4;
+    background-color: #565656;
     padding: 1em;
 }
 
